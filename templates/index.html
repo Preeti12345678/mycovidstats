@@ -11,21 +11,27 @@
     h1 {
         color: red;
     }
+    iframe {
+        width: 100%;
+        height:  65%;
+        border: 0px;
+    }
 
 </style>
 </head>
 
 
 <body>
-    <h1>Covid Stats!</h1><br>
+    <h1>Covid Stats!</h1>
+    <br><br>
     <form method="POST">
-        <label >Enter a Country Code</label><br><br>
-    <input placeholder="Country Code" name="text">
-    <input type="submit">
-</form>
-    <img src="{{image }}">
+        <label>Enter a country name</label>
+        <br><br>
+        <input placeholder="Country Name" name="text">
+        <input type='submit'>
 
-
-    <p>You have {{ count }} Visitors.</p>
+    </form>
+    <iframe src="{{ image }}"></iframe>
+    <p>You have {{count}} visitors</p>
 </body>
 </html>
